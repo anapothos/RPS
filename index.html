@@ -6,12 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-
+    <header class="intro">
+        <h2>Let's Play a Game!</h2>
+        <p>Are you ready for some fun?</p>
+        <h3>Rules</h3>
+        <p>click the image when you have made your choice!</p>
+    </header>
+    <div class="rules">
+        <ul>
+            <li>paper beats rock</li>
+            <li>rock beats scissors</li>
+            <li>scissors beats papers</li>
+        </ul>
+    </div>
+    <div class="game-play-buttons">
+        <button id="rock-button"><img src="./assets/Rock.png" alt="Rock-Pic"></button>
+        <button id="paper-button"><img src="./assets/paper.png" alt="Paper-Pic"></button>
+        <button id="scissors-button"><img src="./assets/Scissors.png" alt="Scissors-Pic"></button>
+    </div>
+    <div class="results">
+        <p>Results:</p>
+        <div class="player-score">
+            <p>Player Score:</p>
+            <p>0</p>
+        </div>
+        <div class="computer-score">
+            <p>Computer Score: </p>
+            <p>0</p>
+        </div>
+    </div>
+    <div class="match"> 
+        <span class="winner"></span>
+        <span class="loser"></span>
+        <span class="throw"></span>
+    </div>
     <script src="app.js"></script>
 </body>
-
 </html>
