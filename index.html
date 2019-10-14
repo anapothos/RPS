@@ -24,9 +24,22 @@
         </ul>
     </div>
     <div class="game-play-buttons">
-        <button id="rock-button"><img src="./assets/Rock.png" alt="Rock-Pic"></button>
-        <button id="paper-button"><img src="./assets/paper.png" alt="Paper-Pic"></button>
-        <button id="scissors-button"><img src="./assets/Scissors.png" alt="Scissors-Pic"></button>
+        <label for="">
+                <input name="options" type="radio" value="rock" checked class="hidden"/>
+                <img src="./assets/Rock.png" alt="Rock-Pic">
+        </label>
+        <label for="">
+                <input name="options" type="radio" value="paper" class="hidden"/>
+                <img src="./assets/paper.png" alt="Paper-Pic">
+        </label>
+        <label for="">
+                <input name="options" type="radio" value="scissors" class="hidden"/>
+                <img src="./assets/Scissors.png" alt="Scissors-Pic">
+        </label>
+        
+        <!-- <input id="rock-input"></input>
+        <input id="paper-input"></input>
+        <input id="scissors-input"></input> -->
     </div>
     <div class="results">
         <p>Results:</p>

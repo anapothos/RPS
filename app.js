@@ -1,3 +1,5 @@
+import computerThrow from './computerThrow.js';
+
 const game = () => {
     let pScore = 0;
     let cScore = 0;
@@ -6,21 +8,13 @@ const game = () => {
     //     const playButton = document.querySelector('.game-play-button');
     //     const match = document.querySelector('.match');
 
-    
     const playMatch = () => {
-        const options = document.querySelectorAll ('.game-play-buttons');
+        const playerChoice = document.querySelector ('input:checked');
         const playerScore = document.querySelectorAll ('.player-score');
         const computerScore = document.querySelectorAll ('.computer-score');
 
         const computerOptions = ['rock', 'paper', 'scissors'];
         
-        options.forEach(option=>{
-            option.addEventListener ('click', function(){
-                const computerNumber = Math.floor(Math.random() * 3);
-                const computerChoice = computerOptions[computerNumber];
-
-            });
-        });
     };
     const updateScore = () => {
         const playerScore = document.querySelector('.player-score p');
@@ -29,7 +23,9 @@ const game = () => {
         computerScore.textContent = cScore; 
     };
 
+    //grab button, asign event listen, on event click call function create computer choice, grab value of user choice, compare hands
 
+    const button.addEventListener
     const compareHands = (playerChoice, computerChoice) => {
         const winner = document.querySelector('.winner');
         if (playerChoice === computerChoice){
